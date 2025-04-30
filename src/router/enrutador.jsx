@@ -1,5 +1,6 @@
 import Login from '../pages/Login.jsx';
 import Home from '../Home.jsx';
+import RutaProtegida from '../components/RutaProtegida.jsx';
 export let enrutador = [
     {
     path: '/',
@@ -7,6 +8,6 @@ export let enrutador = [
     },
     {
         path: '/home',
-        element: <Home/>
+        element: <RutaProtegida protect={<Home/>}/>
     }
 ]
